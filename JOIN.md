@@ -15,7 +15,7 @@
 #### 1-2.  JOIN형식 2) ORACLE에서만 사용하는 방식
   ```
     FROM TABLE_A, TABLE_B
-    WHERE ON의 JOIN 조건
+    	WHERE ON의 JOIN 조건
   ```
 ---
 ### 2. ⚠️ 주의사항
@@ -55,8 +55,12 @@
   ```
 ---
 ### 5. CROSS JOIN(잘못된 JOIN)
-#### 5-1. ROM절의 테이블과 조인되는 테이블이 같은 경
-	
----
+#### 5-1. 특징
+	- 여러가지 테이블을 조인할 때, 조인 조건을 지정하지 않으면 CROSS JOIN이 발생
+ 	- CROSS JOIN: 조인되는 모든 테이블의 데이터들이 1대1로 매핑되어 조화되는 현상
+--- 
 ## **02. OUTER JOIN**
-- 기준
+
+### 1. LEFT OUTER JOIN
+### 2. RIGHT OUTER JOIN
+### 3. FULL OUTER JOIN
