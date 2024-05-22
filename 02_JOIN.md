@@ -81,3 +81,4 @@ SELECT A.A1, A.A2, AA.A1 , AA.A3
 ---
 ### 3. FULL OUTER JOIN
 > FROM절 TABLE과 JOIN되는 TABLE 모두가 기준이 되어 FROM절 TABLE에만 존재하는 데이터와 JOIN되는 TABLE에만 존재하는 데이터도 모두 추가로 조회
+ - 합집합을 행하는 JOIN
