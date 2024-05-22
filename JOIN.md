@@ -1,6 +1,6 @@
 # **JOIN**
 
-## **INNER JOIN**
+## **01. INNER JOIN**
 ### 1. 두 TABLE_의 공통된 데이터 조회
 <p align="center">
   <img src="https://github.com/kimdaehwi990731/Study_Oracle/assets/167949524/62be4eda-9d68-4bfd-89bd-5f9cb1db99a5" width="350" height="250"/>
@@ -43,9 +43,18 @@
 ---
 ### 4. SELF JOIN
 #### 4-1. 두 TABLE이 동일할 때 사용되는 JOIN
+<p align="center">
+  <img src="https://github.com/kimdaehwi990731/Study_Oracle/assets/167949524/ce953e01-0135-4148-b587-0123fce3d88d" width="250" height="250"/>
+</p>
+
   ```
   SELECT A1.C1, A1.C2, A2.C3, A2.C4
 	FROM TABLE_A A1
 	JOIN TABLE_A A2
 		ON A1.C3 = A2.C3;
   ```
+### 5. CROSS JOIN(잘못된 JOIN)
+#### 5-1. ROM절의 테이블과 조인되는 테이블이 같은 경우
+-
+---
+## **02. OUTER JOIN**
