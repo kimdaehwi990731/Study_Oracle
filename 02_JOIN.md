@@ -60,8 +60,9 @@
   - CROSS JOIN: JOIN되는 모든 TABLE의 데이터들이 1대1로 매핑되어 조화되는 현상
 --- 
 ## **02. OUTER JOIN**
-	- INNER JOIN 결과에 추가로 기준이 되는 TABLE에 남아있는 데이터를 조회
- 
+> INNER JOIN 결과에 추가로 기준이 되는 TABLE에 남아있는 데이터를 조회
+
 ### 1. LEFT OUTER JOIN
+
 ### 2. RIGHT OUTER JOIN
 ### 3. FULL OUTER JOIN
