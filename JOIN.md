@@ -1,12 +1,20 @@
 ## **JOIN**
-
+- Venn diagram 예시
 
 
 ### **INNER JOIN**
-  1. 두 테이블의 공통된 데이터 조회
-     - FROM 테이블A
-       ```
-       (INNER) JOIN 테이블B ON 테이블A의 공통컬럼 = 테이블B의 공통컬럼
-       ```
-       ⚠️ ON 절: JOIN 조건으로 공통된 데이터(컬럼)을 지정
-     
+1. 두 TABLE_의 공통된 데이터 조회
+<p align="center">
+  <img src="https://github.com/kimdaehwi990731/Study_Oracle/assets/167949524/62be4eda-9d68-4bfd-89bd-5f9cb1db99a5" width="350" height="200"/>
+</p>
+  - FROM TABLE_A
+     ```
+     (INNER) JOIN TABLE_B ON TABLE_A 공통컬럼 = TABLE_B 공통컬럼
+     ```
+    ⚠️ ON: JOIN 조건으로 공통된 데이터(컬럼)을 지정
+    - ORACLE에서만 사용하는 방식의 JOIN
+      ```
+      FROM TABLE_A, TABLE_B
+        WHERE ON의 JOIN 조건
+      ```
+2. 
