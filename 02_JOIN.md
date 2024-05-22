@@ -72,11 +72,12 @@ SELECT A.A1, A.A2, AA.A1 , AA.A3
 	(LEFT/RIGHT/FULL) TABLE_A AA
 		ON A.A2 = AA.A2
 ```
+---
 ### 1. LEFT OUTER JOIN
 > FROM절에 사용한 TABLE 기준
-
+---
 ### 2. RIGHT OUTER JOIN
 > JOIN되는 절에 사용한 TABLE 기준
-
+---
 ### 3. FULL OUTER JOIN
 > FROM절 TABLE과 JOIN되는 TABLE 모두가 기준이 되어 FROM절 TABLE에만 존재하는 데이터와 JOIN되는 TABLE에만 존재하는 데이터도 모두 추가로 조회
