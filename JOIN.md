@@ -44,5 +44,8 @@
 ### 4. SELF JOIN
 #### 4-1. 두 TABLE이 동일할 때 사용되는 JOIN
   ```
-  
+  SELECT A1.C1, A1.C2, A2.C3, A2.C4
+	FROM TABLE_A A1
+	JOIN TABLE_A A2
+		ON A1.C3 = A2.C3;
   ```
