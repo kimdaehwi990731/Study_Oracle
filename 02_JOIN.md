@@ -61,9 +61,17 @@
   - CROSS JOIN: JOIN되는 모든 TABLE의 데이터들이 1대1로 매핑되어 조화되는 현상
 --- 
 ## **02. OUTER JOIN**
-> INNER JOIN 결과에 추가로 기준이 되는 TABLE에 남아있는 데이터를 조회
-> ⚠️ OUTER는 생략 가능
+> INNER JOIN 결과에 추가로 기준이 되는 TABLE에 남아있는 데이터 조회
 
+> ⚠️ OUTER는 생략 가능
+### 00. OUTER JOIN 형식
+#### 0-1. LEFT/RIGHT/FULL OUTER JOIN
+```
+SELECT A.A1, A.A2, AA.A1 , AA.A3
+	FROM TABLE_A A
+	(LEFT/RIGHT/FULL) TABLE_A AA
+		ON A.A2 = AA.A2
+```
 ### 1. LEFT OUTER JOIN
 > FROM절에 사용한 TABLE 기준
 
