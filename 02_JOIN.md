@@ -62,6 +62,7 @@
 --- 
 ## **02. OUTER JOIN**
 > INNER JOIN 결과에 추가로 기준이 되는 TABLE에 남아있는 데이터를 조회
+> ⚠️ OUTER는 생략 가능
 
 ### 1. LEFT OUTER JOIN
 > FROM절에 사용한 TABLE 기준
