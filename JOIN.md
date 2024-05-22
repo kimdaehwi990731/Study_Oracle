@@ -49,13 +49,14 @@
 
   ```
   SELECT A1.C1, A1.C2, A2.C3, A2.C4
-	FROM TABLE_A A1
-	JOIN TABLE_A A2
-		ON A1.C3 = A2.C3;
+		FROM TABLE_A A1
+		JOIN TABLE_A A2
+			ON A1.C3 = A2.C3;
   ```
 ---
 ### 5. CROSS JOIN(잘못된 JOIN)
 #### 5-1. ROM절의 테이블과 조인되는 테이블이 같은 경
-	- 
+	
 ---
 ## **02. OUTER JOIN**
+- 기준
