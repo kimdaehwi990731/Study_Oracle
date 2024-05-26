@@ -84,4 +84,11 @@ SELECT A.A1, A.A2, AA.A1 , AA.A3
  - 합집합을 행하는 JOIN
 ---
 ## **03. 다중 TABLE JOIN**
-> 
+> 세개 이상의 테이블이 JOIN될 때, 관계를 형성하여 데이터를 추출하는 방식
+```
+FROM 테이블A  
+      JOIN 테이블B  
+      ON 조건1  
+      JOIN 테이블C  
+      ON 조건2  
+```
