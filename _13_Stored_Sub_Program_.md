@@ -1,9 +1,9 @@
-### 2. Stored Procedure
+### **📜 Stored Procedure**
 `01. 특정 기능 및 작업 처리를 위한 서브 프로그램`
 
 `02. 단독 실행만 가능 (쿼리문 호출 불가)`
 
-### 3. Stored Function
+### **📜 Stored Function**
 `프로시저(procedure)와 동일한 역할을 하는 프로그램`
 #### 01. 차이점
 |   | Procedure | Stored Function |
