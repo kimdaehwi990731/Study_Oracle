@@ -48,4 +48,6 @@ DROP FUNCTION {함수명}
 `DML, DDL 등을 지정할 수 있음`
 
 #### 02. 선언
-
+```
+CREATE
+```
