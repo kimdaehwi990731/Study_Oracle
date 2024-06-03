@@ -1,12 +1,34 @@
-### **📜 Stored Sub Program**
-`01. DB에 PL/SQL구문을 저장 ➡️ 필요할 때마다 PL/SQL구문 호출`
+## **📜 Stored Sub Program**
+#### 01. 특징
+`DB에 PL/SQL구문을 저장 ➡️ 필요할 때마다 PL/SQL구문 호출`
 
-`02. `
+#### 02. 장점
+`Oracle 저장/공유 가능 ➡️ 메모리 사용 효율, 성능, 재사용성 향상`
+
+#### 03. 종류
+`SP(Stored Procedure)`
+
+`SF(Stored Function)`
+
+`Trigger`
+
+---
 ### **📜 Stored Procedure**
 `01. 특정 기능 및 작업 처리를 위한 서브 프로그램`
 
 `02. 단독 실행만 가능 (쿼리문 호출 불가)`
 
+#### 01. 생성 ~ 삭제
+`01. 생성`
+```
+CREATE OR REPLACE PROCEDURE {프로시저명}
+IS/AS {선언부}
+BEGIN {실행부}
+EXCEPT {예외처리부}
+END {프로시저명};
+/
+```
+---
 ### **📜 Stored Function**
 `프로시저(procedure)와 동일한 역할을 하는 프로그램`
 #### 01. 차이점
@@ -35,7 +57,7 @@ END;
 ```
 DROP FUNCTION {함수명}
 ```
-
+---
 ### **📜 Trigger**
 `DB 안의 특정 상황/동작/이벤트 발생 시, 자동으로 실행되는 기능을 정의하는 서브 프로그램`
 
