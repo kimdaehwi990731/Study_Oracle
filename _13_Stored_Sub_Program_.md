@@ -1,3 +1,7 @@
+### **📜 Stored Sub Program**
+`01. DB에 PL/SQL구문을 저장 ➡️ 필요할 때마다 PL/SQL구문 호출`
+
+`02. `
 ### **📜 Stored Procedure**
 `01. 특정 기능 및 작업 처리를 위한 서브 프로그램`
 
