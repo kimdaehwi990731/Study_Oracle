@@ -75,7 +75,6 @@ DROP PROCEDURE {프로시저명};
 CREATE OR REPLACE FUNCTION {함수명}(
   매개변수1 [IN] 자료형1
   매개변수2 [IN] 자료형2
-  ...
 )
 RETURN 자료형 IS {선언부};
 BEGIN
@@ -104,7 +103,68 @@ DROP FUNCTION {함수명}
 ##### 003. 기타
 `DML, DDL 등을 지정할 수 있음`
 
-#### 02. 선언
+#### 02. 생성 ~ 삭제
+##### 001. 생성
 ```
-CREATE
+CREATE OR REPLACE TRIGGER {트리거명}
+BEFORE/AFTER
+INSERT/UPDATE/DELECTE ON {테이블명}
+[REFERENCING OLD AS {기존 데이터 명칭} NEW AS {새로운 데이터 명칭}]
+[FOR EACH ROW WHEN {조건식}]
+[FOLLOWS {트리거2}, {트리거3}]
+[ENABLE/DISABLE]
+DECALRE {선언부}
+BEGIN {실행부}
+EXCEPT {예외처리부}
+END {트리거명};
+/
 ```
+- ⚠️ 참고
+  - 트리거 동작 시점
+    - BEFORE
+      
+      `DML 명령어 동작 전`
+  
+    - AFTER
+  
+      `DML 명령어 동작 후`
+      
+  - DML 지정문
+    
+    `OR로 여러가지의 DML 지정문 사용 가능`
+
+    - INSERT
+
+      `값을 입력 받아 추가`
+      
+    - UPDATE
+   
+      `값을 입력 받아 수정`
+      
+    - DELETE
+   
+      `입력 받은 값 삭제`
+
+  - REFERENCING OLD AS {기존 데이터 명칭} NEW AS {새로운 데이터 명칭}
+
+    `01. 기존 데이터 및 새로운 데이터를 변수로 선언해 사용할 수 있는 구문`
+
+    `02. 실행부에서 사용 시, :{명칭}.{칼럼명} 형태로 작성`
+    
+  - FOR EACH ROW WHEN {조건식}
+ 
+    `01. 각각의 행에 대해 트리거의 동작 여부를 결정하는 구문`
+
+    `02. WHEN 조건에 해당하는 행에만 트리거 동작 가능`
+
+    `03. 지정하지 않을 시, 한 번만 동작`
+
+  - FOLLOWS {트리거2}, {트리거3}
+
+    `연관된 트리거들의 동작 순서 지정`
+
+  - ENABLE/DISABLE
+
+    `해당 트리거의 활성화 여부 지정`
+
+
