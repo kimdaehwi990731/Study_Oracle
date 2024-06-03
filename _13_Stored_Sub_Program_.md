@@ -22,8 +22,8 @@
 ##### 001. 생성
 ```
 CREATE OR REPLACE PROCEDURE {프로시저명}(
-  매개변수1 [MODES] 자료형1 [:= 특정값/DEFAULT 기본값],
-  매개변수2 [MODES] 자료형2 [:= 특정값/DEFAULT 기본값]
+  {매개변수1} [MODES] {자료형1} [:= 특정값/DEFAULT 기본값],
+  {매개변수2} [MODES] {자료형2} [:= 특정값/DEFAULT 기본값]
 )
 IS/AS {선언부}
 BEGIN {실행부}
@@ -73,13 +73,13 @@ DROP PROCEDURE {프로시저명};
 ##### 001. 생성
 ```
 CREATE OR REPLACE FUNCTION {함수명}(
-  매개변수1 [IN] 자료형1
-  매개변수2 [IN] 자료형2
+  {매개변수1} [IN] {자료형1},
+  {매개변수2} [IN] {자료형2}
 )
-RETURN 자료형 IS {선언부};
+RETURN {자료형} IS {선언부};
 BEGIN
   {실행부}
-  RETURN 자료형;
+  RETURN {자료형};
 END;
 /
 ```
@@ -177,5 +177,18 @@ DROP TRIGGER {트리거명};
 
 `02. 조건에 맞는 데이터가 존재하지 않을 때, INSERT(추가)`
 
-``
+##### 001. 생성
+```
+MERGE INTO {INSERT 혹은 UPDATE될 테이블명}
+USING {비교대상이 될 테이블/뷰/서브쿼리/DUAL}
+ON {비교조건}
+WHEN MATCHED THEN
+  UPDERATE SET
+    {칼럼명1} = {값1},
+    {칼럼명2} = {값2}
+  /DELETE
+WHEN NOT MATCHED THEN
+  INSERT ({칼럼1}, {칼럼2})
+  VALUES({값1}, {값2})
+```
 
