@@ -1,2 +1,3 @@
-### **Study_Oracle**
-This repository is a directory for studying ORACLE/SQL Theories.
+## **_01_Oracle_Note**
+
+오라클 공부를 하면서 정리한 내용들을 적어두는 공간입니다.
